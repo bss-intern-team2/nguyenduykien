@@ -1,0 +1,171 @@
+.footer-bottom{
+    background-color: white;
+    height:auto ;
+}
+.footer-bottom address{
+    float: left;
+}
+.footer-bottom .custom-block{
+    float: right;
+}
+.link-bottom{
+    font-weight: bold;
+    text-align: left;
+    padding-left: 0;
+}
+.link-bottom a{
+    color: #474747;
+}
+.link-bottom a:hover{
+    color: red;
+    text-decoration: none;
+}
+.link-bottom span{
+    padding-right: 10px;
+}
+.footer-middle, .footer{
+    background-color: #e9e9e9;
+}
+.block .block-title strong span {
+    font-weight: bold;
+    color: #474747;
+    cursor: pointer;
+}
+.footer-middle a{
+    color: #474747;
+    font-size:14px;
+    font-weight: 600;
+}
+.footer-middle a:hover{
+    color: red;
+}
+.line-footer{
+    max-width: 100%;
+    height: 2px;
+    background-color: #dfdfdf;
+}
+.que-cmt{
+    padding-top: 40px;
+    text-align: left;
+}
+.question{
+    font-size: 16px;
+    font-weight: bold;
+    color: #474747;
+
+}
+#contact{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #dd3626;
+    border: none;
+    height: 35px;
+    padding: 10px;
+    margin: 0 5px 0 5px;
+}
+#contact:hover{
+    background-color: #b4291c;
+}
+.phone{
+    color: black;
+    font-weight: bold;
+}
+.connect{
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    color: #474747;
+    padding-top: 40px;
+}
+.social{
+    margin-left: 15px;
+    cursor: pointer;
+}
+.first-footer{
+    height: 100%;
+    background-color: #474747;
+    padding: 0;
+    text-align: left;
+}
+.container-fluid{
+    padding: 0;
+}
+
+.sign-up{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+.email-box{
+    padding-top: 45px;
+    padding-bottom: 15px;
+    color: white;
+    font-size: 16px;
+    text-align: right;
+}
+#email-txt{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: 200px;
+    height:35px;
+}
+#email-btn{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    height: 35px;
+    width: 90px;
+    background-color: #dd3626;
+    color: white;
+    border: none;
+    margin-left: -5px;
+}
+#email-btn:hover{
+    background-color: #b4291c;
+}
+
+@media (min-width: 320px) and (max-width: 424px){
+    .email-box{
+        text-align: left;
+        padding-left: 15px;
+        padding-top: 0;
+    }
+    .sign-up{
+        padding-bottom: 0;
+        padding-left: 15px;
+    }
+    #email-txt{
+        margin-top: 0;
+        width: 200px;
+        margin-left: 0px;
+    }
+    #email-btn{margin-top: 0}
+}
+@media (min-width: 425px) and (max-width: 767px){
+    .email-box{
+        text-align: left;
+        padding-left: 10px;
+        padding-top: 0;
+    }
+    .sign-up{
+        padding-bottom: 0;
+        padding-left: 10px;
+    }
+    .connect{text-align: left}
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .email-box{
+        text-align: left;
+        padding-left: 15px;
+        padding-top: 0;
+    }
+    .sign-up {
+        padding-bottom: 0;
+        padding-left: 15px;
+    }
+    .connect{text-align: left}
+    #email-txt{margin-top: 0}
+    #email-btn{margin-top: 0}
+}

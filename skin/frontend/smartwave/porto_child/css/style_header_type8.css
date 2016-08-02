@@ -1,0 +1,208 @@
+.header-container.type8 {
+    background-color: white !important;
+}
+
+.header-container.type8 p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #dd3626;
+    /*margin-left: -15px;*/
+}
+
+.header-container.type8 .links a {
+    text-transform: none;
+    font-weight: 600;
+    color: black;
+    font-size: 14px;
+}
+
+.header-container.type8 .links li {
+    border-right: none;
+}
+
+.header-container .links li {
+
+}
+
+.header-container.type8 .header #search_mini_form {
+    display: block !important;
+}
+
+.cart-area {
+    padding-left: 15px;
+    position: inherit;
+    margin-top: inherit;
+}
+.header-container.type8 .header{
+    padding:20px 0 0 0;
+}
+.header-container.type8 .links li.last a{
+    font-weight: 800;
+}
+.header-container.type8 .header .mini-cart {
+    background-color: white;
+}
+.header-container.type8 .mybag-link i{
+    color: #dd3626;
+}
+.header-container.type8 .mybag-link .cart-info span{
+    color: #dd3626;
+    font-weight: 700;
+}
+.header-container.type8 .header .form-search {
+    position: relative;
+    width: inherit;
+    right: inherit;
+    top: inherit;
+    border-radius: inherit;
+    border-width: 2px;
+    min-width: inherit;
+    padding-right: inherit;
+}
+
+.header .form-search button.button {
+    top: 0;
+    right: 0;
+}
+.icon-search{
+    color: #dd3626;
+}
+.header .form-search #search{
+    height:35px;
+}
+.header .form-search #cat{
+    display: none;
+}
+.header-container.type8 .header .form-search:before{
+    display: none;
+}
+.header-container.type8.sticky-header .header-wrapper{
+    background-color: #dd3626;
+}
+
+/*-----------STICKY HEADER--------------*/
+.header-container.sticky-header .main-nav .menu > li{
+    padding:0;
+}
+.header-container.type8.sticky-header .header-wrapper{
+    background-color: black;
+}
+/*---------------MENU-------------------*/
+.menu-all-pages-container{
+    padding:0 !important;
+}
+.header-container.type8 .main-nav .menu{
+    padding-right: inherit;
+    padding-left: 10px;
+}
+.header-container.type8 .main-nav .menu-wrapper{
+    background-color: #444444;
+}
+.header-container.type8 .main-nav{
+    height: inherit;
+}
+.menu-all-pages-container{
+    padding:6px;
+}
+.fixed-header ul.menu >li.act, .main-nav ul.menu >li.act{
+    display: none;
+}
+.header-container.type8 .main-nav ul.menu>li>a{
+    padding:0;
+    color: white;
+}
+.fixed-header ul.menu >li >a, .main-nav ul.menu >li >a{
+    font-size: 14px !important;
+}
+.header-container.type8 .header-wrapper{
+    padding: 0 ;
+}
+.header-container.type8 .main-nav .menu > li:first-child{
+    display: none;
+}
+.main-nav ul.menu>li{
+    padding: 16px 21px;
+    border-radius: inherit;
+}
+.main-nav ul.menu>li:hover a {
+    color: #dd3626 !important;
+}
+.main-nav ul.menu>li:hover{
+    background-color: white;
+}
+.header-container.type8 p{
+    /*display: none;*/
+}
+.price-total{
+    color:  #dd3626;
+    font-weight: 700;
+
+}
+.bot-menu{
+    background-color: #dd3626;
+}
+.bot-menu > .container >.col-md-12 > p{
+    color: white !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 3;
+}
+.top-main{
+    position: relative;
+}
+.top-main::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 20px solid transparent;
+    border-top: 28px solid white;
+    bottom: -48px;
+    right: 49%;
+}
+@media (min-width: 1200px){
+    .container{ width: 970px;}
+}
+@media (max-width: 425px){
+    .col-12 {
+        width: 100%;
+    }
+    .col-6{
+        width:50%;
+    }
+    .banner-top{text-align: center;}
+    .header-container.type8 .header #search_mini_form{
+        width:auto;
+    }
+    .text-header{
+        text-align: center;
+    }
+    .bot-menu{
+        margin-top: 10px;
+    }
+    .bot-menu > .container >.col-md-12 > p{
+        font-size: 12px !important;
+        line-height: 1.5;
+    }
+    .bot-menu > .container >.col-md-12{
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+}
+
+@media (max-width: 640px){
+    .header-container.type8 .cart-area {
+        padding-right: 32%;
+    }
+}
+@media (max-width: 991px) {
+    .bot-menu > .container >.col-md-12 > p{
+        line-height: 1.5;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .main-nav ul.menu>li{
+        padding: 16px 21px;
+    }
+}

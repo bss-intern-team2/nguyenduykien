@@ -1,0 +1,82 @@
+<script>
+    jQuery(document).ready(function(){
+        jQuery('.search-button').on('click', function(){
+            jQuery('#search_mini_form').css('display', 'inline-block');
+        });
+
+        jQuery(document).mouseup(function (e)
+        {
+            var container = jQuery("#search_mini_form");
+
+            if (!container.is(e.target) // if the target of the click isn't the container...
+                && container.has(e.target).length === 0) // ... nor a descendant of the container
+            {
+                container.hide();
+            }
+        });
+
+    });
+
+</script>
+<?php echo $this->getChildHtml('sticky.nav') ?>
+<?php
+$store = Mage::app()->getStore();
+$code  = $store->getCode();
+$custom_block = Mage::getStoreConfig('porto_settings/header/static_block', $code);
+?>
+<div class="header-container type9">
+    <img src="skin/frontend/smartwave/porto/images/header.jpg" alt="" class="img-responsive">
+    <div class="wrap">
+    <div class="top-links-container">
+        <div class="top-links container">
+            <p class="text-top-links">The Largest Service Dogs Registry in the US</p>
+            <div class="top-links-area">
+                <div class="top-links-icon"><a href="javascript:void(0)"><?php echo $this->__("links"); ?></a></div>
+                <?php echo $this->getChildHtml('topLinks'); ?>
+                <!--                <li>search</li>-->
+            </div>
+            <p class="welcome-msg"><?php echo $this->getChildHtml('welcome'); ?> <?php echo $this->getAdditionalHtml(); ?></p>
+            <div class="clearer"></div>
+        </div>
+    </div>
+    <div class="header container">
+        <?php echo $this->getChildHtml("demo_header_tooltip"); ?>
+        <div class="search-area">
+            <a href="javascript:void(0)" class="search-icon"><i class="icon-search"></i></a>
+            <?php echo $this->getChildHtml('topSearch'); ?>
+            <div class="menu-icon"><a href="javascript:void(0)" title="<?php echo $this->__('Menu'); ?>"><i class="fa fa-bars"></i></a></div>
+        </div>
+    </div>
+    <div class="container-fluid menu-top">
+        <div class="row" style="background-color: red">
+            <div class="container">
+                <div class="col-md-5 left-menu">
+                    <?php echo $this->getChildHtml('topMenu') ?>
+                </div>
+                <div class="col-md-2 logo-top">
+                    <?php if ($this->getIsHomePage()):?>
+                        <h1 class="logo"><a href="<?php echo $this->getUrl(''); ?>" title="<?php echo $this->getLogoAlt(); ?>" class="logo"><img src="<?php echo $this->getLogoSrc(); ?>" alt="<?php echo $this->getLogoAlt(); ?>" /></a></h1>
+                    <?php else:?>
+                        <a href="<?php echo $this->getUrl(''); ?>" title="<?php echo $this->getLogoAlt(); ?>" class="logo"><strong><?php echo $this->getLogoAlt(); ?></strong><img src="<?php echo $this->getLogoSrc(); ?>" alt="<?php echo $this->getLogoAlt(); ?>" /></a>
+                    <?php endif; ?>
+                </div>
+                <div class="col-md-5 right-menu">
+                    <ul class="right-menu">
+                        <li><a href="">therapy animals</a></li>
+                        <li><a href="">kits</a></li>
+                        <li><a href="">accessories.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container">
+            <div class="text">
+                <p>Free Lifetime Registration <br>
+                    Premium Identification Kits <br>
+                    Online Therapist Reference Letters</p>
+            </div>
+        </div>
+</div>
+</div>
+<?php echo $this->getChildHtml('mobile.nav') ?>

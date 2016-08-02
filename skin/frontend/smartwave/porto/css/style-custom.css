@@ -1,0 +1,282 @@
+.menu-all-pages-container > ul{
+
+}
+.top-links-area .links li:hover a{
+    color: yellow;
+}
+.logo-top > .logo{
+    position: absolute;
+    top: -30px;
+}
+.header-container{
+    padding-top: 25px;
+}
+.header-container.type9 .header>.logo img {
+    height: initial;
+    width:100%;
+}
+.header-container.type9 .links li{
+    cursor: pointer;
+}
+.header-container.type9 .top-links-container{
+    background-color: black;
+    margin-top: 20px;
+}
+.top-links-container{
+    position: initial;
+    border-top: 5px solid orange;
+}
+.text-top-links{
+    color: white;
+    float: left;
+    font-size: 16px;
+    margin: inherit;
+    line-height: inherit;
+    margin-left: -35px;
+}
+.search-area{
+    bottom: -90px;
+    top:inherit;
+    margin-top: inherit;
+    right: -61%;
+}
+.right-menu li{
+    height:100%;
+    float: left;
+    display: inline-block;
+}
+.right-menu li{
+    padding: 17px 20px 17px 0;
+    margin-right: 10px
+}
+.right-menu li:hover a{
+    color: #08c;
+}
+.right-menu li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.header-container.type9 .main-nav ul.menu>li>a{
+    color: white;
+    font-size: 18px;
+}
+.header-container.type9{
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.search-button {
+    background-image: url("skin/frontend/smartwave/porto/images/search2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.search-button:hover{
+    background-image: url("skin/frontend/smartwave/porto/images/search1.png");
+}
+.header #search_mini_form{
+    display: none;
+}
+.wrap{
+    position: absolute;
+    top:0;
+    width: 100%;
+}
+.header-container.type9 .menu-icon{
+    position: absolute;
+    top: -72px;
+    left: 27%;
+}
+.header .form-search #cat{
+    border-left: 2px solid orange;
+    border-right: 2px solid orange;
+}
+.header .form-search .button > i{
+    color: orange;
+}
+.header .form-search{
+    border: 2px solid orange;
+}
+.search-button{
+    background-position: right center;
+}
+.text{
+    color: white;
+    font-size: 24px;
+    text-align: left;
+    font-weight: 600;
+    padding-top: 35px;
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 320px){
+    .header-container.type9 .header .form-search{
+        left: -110px !important;
+    }
+    .header-container.type9 .search-area{
+        left: 110px !important;
+    }
+    .logo-top > .logo{
+        top: -40px !important;
+        width: 25% !important;
+    }
+    .text{
+        padding-top: 10px !important;
+        padding-left: 15px !important;
+    }
+}
+@media screen and (max-width: 425px){
+    .logo-top > .logo{
+        left: -15px;
+        top: -40px;
+        width: 20%;
+    }
+    .logo > a > img {
+        width:50%;
+        float: left;
+    }
+    .header-container.type9 > img{
+        position: absolute;
+        top: 2%;
+    }
+    .header-container.type9 .header .form-search:before{
+        border: none;
+    }
+    .header-container.type9 .header .form-search{
+        left: -70px;
+        top: -33px;
+        border-width: 2px;
+        border-color: orange;
+        border-color: orange;
+        border-color: orange;
+    }
+    .header-container.type9 .search-area{
+        left: 135px;
+    }
+    .search-icon{
+        position: absolute;
+        top: -72px;
+        left: 22%;
+    }
+    .right-menu{
+        display: none;
+    }
+    .header-container {
+        height: 86px;
+        padding-top: inherit;
+    }
+    .search-button{
+        display: none !important;
+    }
+    .text-top-links{
+        display: none;
+    }
+    .header-container.type9 .top-links-container{
+        margin-top: 0;
+    }
+    .text{
+        font-size: 10px;
+        padding-top: 15px;
+        padding-left: 30px;
+    }
+}
+@media all and (min-width: 426px) and (max-width: 768px){
+    .text-top-links{
+        display: none;
+    }
+    .header-container.type9 .header .form-search {
+        width: 400px;
+        left: 130px;
+        top: -33px;
+        border-width: 2px;
+        border-color: orange;
+    }
+    .header-container.type9 .header .form-search:before{
+        border: none;
+    }
+    .search-icon{
+        position: absolute;
+        top: -72px;
+        left: 22%;
+    }
+    .header-container {
+        padding-top: inherit;
+    }
+    .logo-top > .logo {
+        top: -35px;
+        left: -25px;
+    }
+    .right-menu{
+        display: none;
+    }
+    .search-button{
+        display: none !important;
+    }
+    .header-container.type9 .top-links-container{
+        margin-top: 0;
+    }
+    .text{
+        font-size: 14px;
+        padding-left: 130px;
+    }
+}
+@media all and (min-width: 769px) and (max-width: 991px){
+
+    .right-menu{
+        display: none;
+    }
+    .search-button{
+        display: none !important;
+    }
+    .header-container.type9 .header .form-search:before{
+        border: none;
+    }
+    .header-container.type9 .header .form-search {
+        width: 400px;
+        left: 130px;
+        top: -33px;
+        border-width: 2px;
+        border-color: orange;
+    }
+    .text{
+        font-size: 14px;
+    }
+    .logo-top > .logo {
+        position: absolute;
+        top: -36px;
+        left: -135px;
+    }
+    .text-top-links{
+        margin-left: -15px;
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1024px) {
+    .header-container.type9 .main-nav ul.menu>li>a{
+        font-size: 14px;
+    }
+    .right-menu li a{
+        font-size: 14px;
+    }
+    .header .form-search{
+        top: -2px;
+    }
+    .text{
+        font-size: 16px;
+    }
+    .text-top-links{
+        margin-left: -25px;
+    }
+}
+@media all and (min-width: 1025px) and (max-width: 1199px){
+    .header-container.type9 .main-nav ul.menu>li>a{
+        font-size: 14px;
+    }
+    .right-menu li a{
+        font-size: 14px;
+    }
+    .text{
+        font-size: 18px;
+    }
+}

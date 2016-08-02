@@ -1,0 +1,11 @@
+.right-footer{
+    color: black;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: 10px;
+    line-height: 30px;
+}
+.right-footer span:hover{
+    color: red;
+    cursor: pointer;
+}
