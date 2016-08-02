@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="086cc47a-92d0-49d4-84f0-06e99a46622e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/smartwave/porto_child/images/banner02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/smartwave/porto_child/images/icon_baskes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/smartwave/porto_child/images/shop_for_bbq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/smartwave/porto_child/images/shop_for_stew.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/smartwave/porto_child/images/shop_roast.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/magicento.xml" afterPath="$PROJECT_DIR$/.idea/magicento.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/catalog/category/view.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/catalog/category/view.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/smartwave/porto_child/layout/local.xml" afterPath="$PROJECT_DIR$/app/design/frontend/smartwave/porto_child/layout/local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/smartwave/porto_child/template/page/1column.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/smartwave/porto_child/template/page/1column.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/smartwave/porto_child/template/page/html/header_type8.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/smartwave/porto_child/template/page/html/header_type8.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/smartwave/porto_child/css/style_header_type8.css" afterPath="$PROJECT_DIR$/skin/frontend/smartwave/porto_child/css/style_header_type8.css" />
     </list>
     <ignored path="magento.iws" />
     <ignored path=".idea/workspace.xml" />
