@@ -104,9 +104,7 @@
 .menu-all-pages-container{
     padding:6px;
 }
-.fixed-header ul.menu >li.act, .main-nav ul.menu >li.act{
-    display: none;
-}
+
 .header-container.type8 .main-nav ul.menu>li>a{
     padding:0;
     color: white;
@@ -160,6 +158,94 @@
     bottom: -48px;
     right: 49%;
 }
+
+/* ----------STYLE BEEF PAGE------------- */
+.fixed-header ul.menu >li.act, .main-nav ul.menu >li.act{
+    display: inline-block;
+    background-color: black;
+    border-radius: 0;
+}
+.top-banner{
+    background-image: url("http://localhost:8080/nguyenduykien/skin/frontend/smartwave/porto_child/images/banner02.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 285px;
+}
+.shop-content{
+    background-color: white;
+    margin-top: -200px;
+}
+.shop{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+}
+.shop-our{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.shop-all{
+    height: 35px;
+    background-color: #dd3626;
+    border: none;
+    width: 100px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+.beef{
+    font-family: 'Oswald';
+    font-size: 45px;
+    color: white;
+    font-weight: 800;
+    line-height: 80px;
+}
+.shop-bbq{
+    margin-top: 20px;
+    background-image: url("http://localhost:8080/nguyenduykien/skin/frontend/smartwave/porto_child/images/shop_for_bbq.png");
+    height: 85px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.shop-roasts{
+    margin-top: 20px;
+    background-image: url("http://localhost:8080/nguyenduykien/skin/frontend/smartwave/porto_child/images/shop_roast.png");
+    height: 85px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.shop-stew{
+    margin-top: 20px;
+    background-image: url("http://localhost:8080/nguyenduykien/skin/frontend/smartwave/porto_child/images/shop_for_stew.png");
+    height: 85px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.shop-bbq > span, .shop-stew > span, .shop-roasts > span{
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    float: left;
+    margin-left: 20px;
+    line-height: 80px;
+}
+.shop-bbq > input, .shop-stew > input, .shop-roasts > input{
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+    height: 35px;
+    background-color: #dd3626;
+    border: none;
+    width: 100px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+.shop-bbq > input:hover, .shop-roasts > input:hover, .shop-stew > input:hover, .shop-our > input:hover{
+    background-color: #b4291c;
+}
+
 @media (min-width: 1200px){
     .container{ width: 970px;}
 }

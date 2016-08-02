@@ -4,6 +4,9 @@ $store = Mage::app()->getStore();
 $code = $store->getCode();
 $custom_block = Mage::getStoreConfig('porto_settings/header/static_block', $code);
 ?>
+    <style>
+
+    </style>
 <div class="header-container type8">
     <div class="">
         <div class="header container">
@@ -66,6 +69,29 @@ $custom_block = Mage::getStoreConfig('porto_settings/header/static_block', $code
             <div class="col-md-12">
                 <p style="margin: inherit">We deliver to metro areas in Sydney, Melbourner and Canberra for a flat  $10 • See if we deliver  to your  area <span class="glyphicon glyphicon-chevron-right"></span></p>
             </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="top-banner">
+            <span class="beef">BEEF</span>
+        </div>
+    </div>
+    <div class="container shop-content">
+        <div class="shop-our">
+            <span class="shop">Shop Our Entire Beef Range</span><br/>
+            <input type="button" name="shop-all" class="shop-all" value="SHOP ALL >">
+        </div>
+        <div class="shop-bbq">
+            <span>Shop For BBQ's</span>
+            <input type="button" class="shop-bbq-btn" name="shop-bbq-btn" value="SHOP >">
+        </div>
+        <div class="shop-roasts">
+            <span>Shop Roasts</span>
+            <input type="button" class="shop-roasts-btn" name="shop-roasts-btn" value="SHOP >">
+        </div>
+        <div class="shop-stew">
+            <span>Shop For Stew</span>
+            <input type="button" class="shop-stew-btn" name="shop-stew-btn" value="SHOP >">
         </div>
     </div>
 </div>
