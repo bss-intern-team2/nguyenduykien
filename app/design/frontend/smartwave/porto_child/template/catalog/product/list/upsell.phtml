@@ -66,9 +66,9 @@ $code  = $store->getCode();
                             if (($newsTo != '' && $newsFrom != '' && $now>=$newsFrom && $now<=$newsTo) || ($newsTo == '' && $now >=$newsFrom) || ($newsFrom == '' && $now<=$newsTo))
                             {
                                 if(Mage::getStoreConfig("porto_settings/product_label/new", $code)){
-                        ?> 
+                        ?>
                                 <div class="product-label" style="right: 10px; <?php echo ($sale_label)?"top: 40px;":""; ?>"><span class="new-product-icon"><?php echo Mage::getStoreConfig("porto_settings/product_label/new_label_text", $code);?></span></div>
-                        <?php 
+                        <?php
                                 }
                             }
                         }

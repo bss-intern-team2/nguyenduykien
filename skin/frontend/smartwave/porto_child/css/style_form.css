@@ -25,7 +25,6 @@
 .col1-layout{
     margin-bottom: 6px;
     background-color: #e9e9e9;
-    box-shadow: 0 5px 5px #b8b6b0;
 }
 #contactForm input, #contactForm textarea {
     border-radius: 0;
@@ -59,8 +58,9 @@
     padding-bottom: 80px;
     padding-top: 80px;
 }
-.main-container{
+.main-container {
     padding: 0;
+    background-color: white;
 }
 .contact-detail b{
     color: black;

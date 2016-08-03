@@ -33,22 +33,28 @@
     position: inherit;
     margin-top: inherit;
 }
-.header-container.type8 .header{
-    padding:20px 0 0 0;
+
+.header-container.type8 .header {
+    padding: 20px 0 0 0;
 }
-.header-container.type8 .links li.last a{
+
+.header-container.type8 .links li.last a {
     font-weight: 800;
 }
+
 .header-container.type8 .header .mini-cart {
     background-color: white;
 }
-.header-container.type8 .mybag-link i{
+
+.header-container.type8 .mybag-link i {
     color: #dd3626;
 }
-.header-container.type8 .mybag-link .cart-info span{
+
+.header-container.type8 .mybag-link .cart-info span {
     color: #dd3626;
     font-weight: 700;
 }
+
 .header-container.type8 .header .form-search {
     position: relative;
     width: inherit;
@@ -64,90 +70,113 @@
     top: 0;
     right: 0;
 }
-.icon-search{
+
+.icon-search {
     color: #dd3626;
 }
-.header .form-search #search{
-    height:35px;
+
+.header .form-search #search {
+    height: 35px;
 }
-.header .form-search #cat{
+
+.header .form-search #cat {
     display: none;
 }
-.header-container.type8 .header .form-search:before{
+
+.header-container.type8 .header .form-search:before {
     display: none;
 }
-.header-container.type8.sticky-header .header-wrapper{
+
+.header-container.type8.sticky-header .header-wrapper {
     background-color: #dd3626;
 }
 
 /*-----------STICKY HEADER--------------*/
-.header-container.sticky-header .main-nav .menu > li{
-    padding:0;
+.header-container.sticky-header .main-nav .menu > li {
+    padding: 0;
 }
-.header-container.type8.sticky-header .header-wrapper{
+
+.header-container.type8.sticky-header .header-wrapper {
     background-color: black;
 }
+
 /*---------------MENU-------------------*/
-.menu-all-pages-container{
-    padding:0 !important;
+.menu-all-pages-container {
+    padding: 0 !important;
 }
-.header-container.type8 .main-nav .menu{
+
+.header-container.type8 .main-nav .menu {
     padding-right: inherit;
     padding-left: 10px;
 }
-.header-container.type8 .main-nav .menu-wrapper{
+
+.header-container.type8 .main-nav .menu-wrapper {
     background-color: #444444;
 }
-.header-container.type8 .main-nav{
+
+.header-container.type8 .main-nav {
     height: inherit;
 }
-.menu-all-pages-container{
-    padding:6px;
+
+.menu-all-pages-container {
+    padding: 6px;
 }
 
-.header-container.type8 .main-nav ul.menu>li>a{
-    padding:0;
+.header-container.type8 .main-nav ul.menu > li > a {
+    padding: 0;
     color: white;
 }
-.fixed-header ul.menu >li >a, .main-nav ul.menu >li >a{
+
+.fixed-header ul.menu > li > a, .main-nav ul.menu > li > a {
     font-size: 14px !important;
 }
-.header-container.type8 .header-wrapper{
-    padding: 0 ;
+
+.header-container.type8 .header-wrapper {
+    padding: 0;
 }
-.header-container.type8 .main-nav .menu > li:first-child{
+
+.header-container.type8 .main-nav .menu > li:first-child {
     display: none;
 }
-.main-nav ul.menu>li{
+
+.main-nav ul.menu > li {
     padding: 16px 21px;
     border-radius: inherit;
 }
-.main-nav ul.menu>li:hover a {
+
+.main-nav ul.menu > li:hover a {
     color: #dd3626 !important;
 }
-.main-nav ul.menu>li:hover{
+
+.main-nav ul.menu > li:hover {
     background-color: white;
 }
-.header-container.type8 p{
+
+.header-container.type8 p {
     /*display: none;*/
 }
-.price-total{
-    color:  #dd3626;
+
+.price-total {
+    color: #dd3626;
     font-weight: 700;
 
 }
-.bot-menu{
+
+.bot-menu {
     background-color: #dd3626;
 }
-.bot-menu > .container >.col-md-12 > p{
+
+.bot-menu > .container > .col-md-12 > p {
     color: white !important;
     font-size: 14px !important;
     font-weight: 500 !important;
     line-height: 3;
 }
-.top-main{
+
+.top-main {
     position: relative;
 }
+
 .top-main::after {
     content: "";
     width: 0;
@@ -159,33 +188,45 @@
     right: 49%;
 }
 
+.header-container.type8 .purchase p{
+    padding-top: 40px;
+    color: #000000;
+    font-weight: 100;
+    text-align: left;
+}
+
 /* ----------STYLE BEEF PAGE------------- */
-.fixed-header ul.menu >li.act, .main-nav ul.menu >li.act{
+.fixed-header ul.menu > li.act, .main-nav ul.menu > li.act {
     display: inline-block;
     background-color: black;
     border-radius: 0;
 }
-.top-banner{
+
+.top-banner {
     background-image: url("http://localhost:8080/nguyenduykien/skin/frontend/smartwave/porto_child/images/banner02.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 285px;
 }
-.shop-content{
+
+.shop-content {
     background-color: white;
     margin-top: -200px;
 }
-.shop{
+
+.shop {
     font-size: 24px;
     text-align: center;
     font-weight: 700;
     color: black;
 }
-.shop-our{
+
+.shop-our {
     padding-top: 40px;
     padding-bottom: 20px;
 }
-.shop-all{
+
+.shop-all {
     height: 35px;
     background-color: #dd3626;
     border: none;
@@ -194,35 +235,40 @@
     color: white;
     font-weight: 700;
 }
-.beef{
+
+.beef {
     font-family: 'Oswald';
     font-size: 45px;
     color: white;
     font-weight: 800;
     line-height: 80px;
 }
-.shop-bbq{
+
+.shop-bbq {
     margin-top: 20px;
     background-image: url("http://localhost:8080/nguyenduykien/skin/frontend/smartwave/porto_child/images/shop_for_bbq.png");
     height: 85px;
     background-repeat: no-repeat;
     background-size: contain;
 }
-.shop-roasts{
+
+.shop-roasts {
     margin-top: 20px;
     background-image: url("http://localhost:8080/nguyenduykien/skin/frontend/smartwave/porto_child/images/shop_roast.png");
     height: 85px;
     background-repeat: no-repeat;
     background-size: contain;
 }
-.shop-stew{
+
+.shop-stew {
     margin-top: 20px;
     background-image: url("http://localhost:8080/nguyenduykien/skin/frontend/smartwave/porto_child/images/shop_for_stew.png");
     height: 85px;
     background-repeat: no-repeat;
     background-size: contain;
 }
-.shop-bbq > span, .shop-stew > span, .shop-roasts > span{
+
+.shop-bbq > span, .shop-stew > span, .shop-roasts > span {
     font-size: 18px;
     color: white;
     font-weight: 700;
@@ -230,7 +276,8 @@
     margin-left: 20px;
     line-height: 80px;
 }
-.shop-bbq > input, .shop-stew > input, .shop-roasts > input{
+
+.shop-bbq > input, .shop-stew > input, .shop-roasts > input {
     float: right;
     margin-top: 25px;
     margin-right: 20px;
@@ -242,53 +289,82 @@
     color: white;
     font-weight: 700;
 }
-.shop-bbq > input:hover, .shop-roasts > input:hover, .shop-stew > input:hover, .shop-our > input:hover{
+
+.shop-bbq > input:hover, .shop-roasts > input:hover, .shop-stew > input:hover, .shop-our > input:hover {
     background-color: #b4291c;
 }
 
-@media (min-width: 1200px){
-    .container{ width: 970px;}
+/* ----------STYLE ADD TO CART -------------*/
+.item .details-area .actions a.addtocart {
+    width: 100%;
+    background-color: #86ca3e;
+    border-radius: 0;
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
 }
-@media (max-width: 425px){
+
+.item:hover .details-area .actions a.comparelink {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (max-width: 425px) {
     .col-12 {
         width: 100%;
     }
-    .col-6{
-        width:50%;
+
+    .col-6 {
+        width: 50%;
     }
-    .banner-top{text-align: center;}
-    .header-container.type8 .header #search_mini_form{
-        width:auto;
-    }
-    .text-header{
+
+    .banner-top {
         text-align: center;
     }
-    .bot-menu{
+
+    .header-container.type8 .header #search_mini_form {
+        width: auto;
+    }
+
+    .text-header {
+        text-align: center;
+    }
+
+    .bot-menu {
         margin-top: 10px;
     }
-    .bot-menu > .container >.col-md-12 > p{
+
+    .bot-menu > .container > .col-md-12 > p {
         font-size: 12px !important;
         line-height: 1.5;
     }
-    .bot-menu > .container >.col-md-12{
+
+    .bot-menu > .container > .col-md-12 {
         padding-top: 10px;
         padding-bottom: 10px;
 
     }
 }
 
-@media (max-width: 640px){
+@media (max-width: 640px) {
     .header-container.type8 .cart-area {
         padding-right: 32%;
     }
 }
+
 @media (max-width: 991px) {
-    .bot-menu > .container >.col-md-12 > p{
+    .bot-menu > .container > .col-md-12 > p {
         line-height: 1.5;
     }
 }
+
 @media (min-width: 992px) and (max-width: 1200px) {
-    .main-nav ul.menu>li{
+    .main-nav ul.menu > li {
         padding: 16px 21px;
     }
 }
