@@ -54,6 +54,7 @@
             <action method="addCss"><stylesheet>css/style_form.css</stylesheet></action>
             <action method="addCss"><stylesheet>css/style_footer_subcribe.css</stylesheet></action>
             <action method="addCss"><stylesheet>css/style_footer.css</stylesheet></action>
+            <action method="addCss"><stylesheet>css/style_reference.css</stylesheet></action>
         </reference>
         <reference name="header">
             <action method="setTemplate" ifconfig="porto_settings/header/type" condition="0"><template>page/html/header_type1.phtml</template></action>
@@ -135,10 +136,7 @@
         </reference>
     </default>
     <catalog_category_default>
-        <!--ADD TEST REFERENCE-->
-        <reference name="newreference">
-            <block type="core/template" name="newreferenceblock" template="test/newreference.phtml" />
-        </reference>
+        
         <reference name="root">
             <action method="setTemplate" ifconfig="porto_settings/category/page_layout" condition="one_column"><template>page/1column.phtml</template></action>
             <action method="setTemplate" ifconfig="porto_settings/category/page_layout" condition="two_column_left"><template>page/2columns-left.phtml</template></action>
@@ -182,6 +180,8 @@
             <action method="addJs"><script>smartwave/jquery/plugins/etalage/jquery.zoom.min.js</script></action>
             <action method="addItem"><type>js_css</type><name>smartwave/jquery/plugins/etalage/etalage.css</name></action>
         </reference>
+
+        
         <reference name="product.info.additional">
             <action method="unsetChild"><name>product_tag_list</name></action>
             <block type="catalog/product_view_tabs" name="product.info.tabs" as="info_tabs">

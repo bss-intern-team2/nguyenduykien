@@ -91,9 +91,7 @@ Default layout, loads most of the pages
 
             <!--ADD NEW BLOCK-->
             <block type="core/text_list" name="newreference" as="newreference"/>
-
-
-
+        
             <block type="core/text_list" name="left" as="left" translate="label">
                 <label>Left Column</label>
             </block>

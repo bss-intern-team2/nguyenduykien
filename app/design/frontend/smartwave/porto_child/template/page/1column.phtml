@@ -33,6 +33,9 @@
 <html lang="<?php echo $this->getLang() ?>">
 <head>
 <?php echo $this->getChildHtml('head') ?>
+<style type="text/css">
+    .a-left{position: absolute;}
+</style>
 </head>
 <body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
 <?php echo $this->getChildHtml('after_body_start') ?>
@@ -41,9 +44,9 @@
     <div class="page">
         <?php echo $this->getChildHtml('custom_notice') ?>
         <?php echo $this->getChildHtml('header') ?>
-        <?php echo $this->getChildHtml('breadcrumbs') ?>
         <?php echo $this->getChildHtml('new-header') ?>
         <?php echo $this->getChildHtml('newreference') ?>
+        <?php echo $this->getChildHtml('breadcrumbs') ?>
         <div class="main-container col1-layout">
             <div class="wrap">
                 <div class="main container">

@@ -1,0 +1,42 @@
+
+.category-beef{
+    position: relative;
+}
+.category-name{
+    position: absolute;
+    font-size: 45px;
+    font-weight: 800;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+}
+.shop-all {
+    height: 35px;
+    background-color: #dd3626;
+    border: none;
+    width: 100px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+.shop-text{
+    font-size: 40px;
+    margin-top: 30px;
+    font-weight: 700;
+}
+.shop-our{
+    background-color: white;
+}
+.subcategories > li{
+    position: relative;
+    margin-bottom: 40px;
+}
+.sub-name >a{
+    position: absolute;
+    top: 35%;
+    left: 40px;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}

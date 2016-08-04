@@ -6,13 +6,13 @@
     $_category  = $this->getCurrentCategory();
     $_showcartbutton = Mage::getStoreConfig('porto_settings/category_grid/show_addtocart', $code);
     $_showcartbutton = Mage::getStoreConfig('porto_settings/category_grid/show_addtolinks', $code);
-    $_imgHtml   = '';
-    if ($_imgUrl = $_category->getImageUrl()) {
-        $_imgHtml = '<p class="category-image"><img src="'.$_imgUrl.'" alt="'.$this->escapeHtml($_category->getName()).'" title="'.$this->escapeHtml($_category->getName()).'" /></p>';
-        $_imgHtml = $_helper->categoryAttribute($_category, $_imgHtml, 'image');
-    }
+    // $_imgHtml   = '';
+    // if ($_imgUrl = $_category->getImageUrl()) {
+    //     $_imgHtml = '<p class="category-image"><img src="'.$_imgUrl.'" alt="'.$this->escapeHtml($_category->getName()).'" title="'.$this->escapeHtml($_category->getName()).'" /></p>';
+    //     $_imgHtml = $_helper->categoryAttribute($_category, $_imgHtml, 'image');
+    // }
 ?>
-<?php echo $_imgHtml ?>
+<?php // echo $_imgHtml ?>
 <?php
     if(!Mage::getStoreConfig("porto_settings/category/fullwidth_description",$code)){
         if($_description=$_category->getDescription()){
