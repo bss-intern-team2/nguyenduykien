@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="086cc47a-92d0-49d4-84f0-06e99a46622e" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/errors/local.xml.sample" afterPath="$PROJECT_DIR$/errors/local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/smartwave/porto_child/template/page/1column.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/smartwave/porto_child/template/page/1column.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/smartwave/porto_child/template/page/html/header_type8.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/smartwave/porto_child/template/page/html/header_type8.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/layout/page.xml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/layout/page.xml" />
     </list>
     <ignored path="magento.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,8 +60,8 @@
       <file leaf-file-name="page.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/layout/page.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.7473118">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6953405">
+              <caret line="140" column="48" selection-start-line="140" selection-start-column="48" selection-end-line="140" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -190,6 +188,7 @@
         <option value="$PROJECT_DIR$/app/design/frontend/smartwave/porto_child/template/page/1column.phtml" />
         <option value="$PROJECT_DIR$/skin/frontend/smartwave/porto_child/css/style_header_type8.css" />
         <option value="$PROJECT_DIR$/app/design/frontend/smartwave/porto_child/template/page/html/header_type8.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/base/default/layout/page.xml" />
       </list>
     </option>
   </component>
@@ -432,7 +431,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2602118" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -837,8 +836,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/layout/page.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.7473118">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6953405">
+          <caret line="140" column="48" selection-start-line="140" selection-start-column="48" selection-end-line="140" selection-end-column="48" />
           <folding />
         </state>
       </provider>
