@@ -135,6 +135,10 @@
         </reference>
     </default>
     <catalog_category_default>
+        <!--ADD TEST REFERENCE-->
+        <reference name="newreference">
+            <block type="core/template" name="newreferenceblock" template="test/newreference.phtml" />
+        </reference>
         <reference name="root">
             <action method="setTemplate" ifconfig="porto_settings/category/page_layout" condition="one_column"><template>page/1column.phtml</template></action>
             <action method="setTemplate" ifconfig="porto_settings/category/page_layout" condition="two_column_left"><template>page/2columns-left.phtml</template></action>

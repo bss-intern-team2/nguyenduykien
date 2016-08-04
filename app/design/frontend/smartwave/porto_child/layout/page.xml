@@ -31,6 +31,7 @@ Default layout, loads most of the pages
 -->
 
     <default translate="label" module="page">
+
         <label>All Pages</label>
         <block type="page/html" name="root" output="toHtml" template="page/3columns.phtml">
 
@@ -88,6 +89,11 @@ Default layout, loads most of the pages
                 </block>
             </block>
 
+            <!--ADD NEW BLOCK-->
+            <block type="core/text_list" name="newreference" as="newreference"/>
+
+
+
             <block type="core/text_list" name="left" as="left" translate="label">
                 <label>Left Column</label>
             </block>
@@ -125,6 +131,23 @@ Default layout, loads most of the pages
         <block type="core/profiler" output="toHtml" name="core_profiler"/>
     </default>
 
+    <catalog_category_default>
+        <reference name="root">
+            <action method="setTemplate" ifconfig="porto_settings/category/page_layout" condition="one_column"><template>page/1column.phtml</template></action>
+            <action method="setTemplate" ifconfig="porto_settings/category/page_layout" condition="two_column_left"><template>page/2columns-left.phtml</template></action>
+            <action method="setTemplate" ifconfig="porto_settings/category/page_layout" condition="two_column_right"><template>page/2columns-right.phtml</template></action>
+            <action method="setTemplate" ifconfig="porto_settings/category/page_layout" condition="three_column"><template>page/3columns.phtml</template></action>
+        </reference>
+        <reference name="page.header">
+            <action method="setTemplate"><template>catalog/category/page_header.phtml</template></action>
+        </reference>
+        <reference name="left">
+            <remove name="tags_popular"/>
+            <block type="cms/block" name="custom_side_block" after="-"><action method="setBlockId"><block_id>porto_left_side_category</block_id></action></block>
+        </reference>
+    </catalog_category_default>
+
+
     <print translate="label" module="page">
         <label>All Pages (Print Version)</label>
         <!-- Mage_Page -->
@@ -153,6 +176,7 @@ Default layout, loads most of the pages
 
         </block>
     </print>
+
 
      <!-- Custom page layout handles -->
     <page_empty translate="label">
