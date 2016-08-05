@@ -55,6 +55,7 @@
             <action method="addCss"><stylesheet>css/style_footer_subcribe.css</stylesheet></action>
             <action method="addCss"><stylesheet>css/style_footer.css</stylesheet></action>
             <action method="addCss"><stylesheet>css/style_reference.css</stylesheet></action>
+            <action method="addCss"><stylesheet>css/style_list.css</stylesheet></action>
         </reference>
         <reference name="header">
             <action method="setTemplate" ifconfig="porto_settings/header/type" condition="0"><template>page/html/header_type1.phtml</template></action>

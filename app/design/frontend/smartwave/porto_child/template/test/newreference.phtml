@@ -9,20 +9,21 @@
     $_showcartbutton = Mage::getStoreConfig('porto_settings/category_grid/show_addtolinks', $code);
     $_imgHtml   = '';
     if ($_imgUrl = $_category->getImageUrl()) {
-        $_imgHtml = '<img src="'.$_imgUrl.'" alt="'.$this->escapeHtml($_category->getName()).'" title="'.$this->escapeHtml($_category->getName()).'" />';
+        $_imgHtml = '<img src="'.$_imgUrl.'" alt="'.$this->escapeHtml($_category->getName()).'" title="'.$this->escapeHtml($_category->getName()).'" class="img-responsive" />';
         $_imgHtml = $_helper->categoryAttribute($_category, $_imgHtml, 'image');
     }
 ?>
 <div class="category-beef">
 	<div class="category-image">
+		<div class="category-name">
+			<?php echo $this->getCurrentCategory()->getName() ?>
+		</div>
 		<?php echo $_imgHtml?>
-	</div>
-	<div class="category-name">
-	<?php echo $this->getCurrentCategory()->getName() ?>
-</div>
-</div>
-<div class="container shop-out">
-	<p class="shop-text">Shop Our Entire Beef Range</p>
-	<input type="button" name="shop-all" class="shop-all" value="SHOP ALL >">
-</div>
+		<div class="container shop-our">
+			<p class="shop-text">Shop Our Entire Beef Range</p>
+			<input type="button" name="shop-all" class="shop-all" value="SHOP ALL >">
+		</div>
 
+	</div>
+	
+</div>

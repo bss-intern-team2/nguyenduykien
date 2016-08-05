@@ -1,0 +1,32 @@
+.item .details-area .actions a{
+	    background-color: #86ca3e;
+	    width: 100%;
+	    border: none;
+	    border-radius: 0;
+	    color: white;
+	    text-transform: uppercase;
+	    font-weight: 700;
+}
+.item .details-area .actions img{
+    padding: 7px 0 0 10px;
+}
+    a.quickview-icon{display: none}
+    .col-main .category-products .products-grid li.item .details-area .product-name{
+        height: 40px;
+        text-align: left;
+        font-weight: 700;
+        color: #000000
+    }
+    .ratings{
+        display: none;
+    }
+    .price-box{text-align: left;}
+    .regular-price .price{color: red}
+    .category-products > .popular {
+        font-size: 35px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: black;
+        text-align: center;
+    }
+.item .details-area .actions a.comparelink{display: none;}

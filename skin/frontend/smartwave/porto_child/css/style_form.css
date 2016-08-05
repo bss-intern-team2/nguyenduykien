@@ -54,10 +54,6 @@
     text-transform: uppercase;
     line-height: 1.2;
 }
-.col-main{
-    padding-bottom: 80px;
-    padding-top: 80px;
-}
 .main-container {
     padding: 0;
     background-color: white;
@@ -91,10 +87,13 @@ iframe{
 
 /*-----------BREAD CRUMB---------*/
 .a-left{
-    padding-top: 20px;
+    position: absolute;
+    z-index: 10;
+    top: 200px;
+    color: white;
 }
 .a-left .home a{
-    color: black;
+    color: white;
 }
 .a-left li{
     float: left;

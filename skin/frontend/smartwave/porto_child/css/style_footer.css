@@ -111,6 +111,8 @@
     margin-bottom: 15px;
     width: 200px;
     height:35px;
+    border-radius: 0;
+    border: none;
 }
 #email-btn{
     margin-top: 30px;
@@ -142,6 +144,7 @@
         margin-left: 0px;
     }
     #email-btn{margin-top: 0}
+    .footer-middle{ display: none; }
 }
 @media (min-width: 425px) and (max-width: 767px){
     .email-box{

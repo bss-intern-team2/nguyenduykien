@@ -1,21 +1,27 @@
 <?php
 $category = Mage::getSingleton('catalog/layer')->getCurrentCategory();
+
+$store = Mage::app()->getStore();
+$code  = $store->getCode();    
+$_helper    = $this->helper('catalog/output');
+
 $categories = $category->getCollection()
         ->addAttributeToSelect(array('name', 'thumbnail'))
         ->addAttributeToFilter('is_active', 1)
         ->addIdFilter($category->getChildren())
 ?>
-<div class="container">
+	<div>
 	<ul class="subcategories">
 	    <?php foreach ($categories as $category): ?>
         <li>
             <div class="sub-img">
-            	<a href="<?php echo $category->getUrl() ?>"><img src="<?php echo Mage::getBaseUrl('media') . 'catalog' . DS . 'category' . DS . $category->getThumbnail() ?>" alt="<?php echo $this->htmlEscape($category->getName()) ?>" />
+            	<a href="<?php echo $category->getUrl() ?>"><img src="<?php echo Mage::getBaseUrl('media') . 'catalog' . DS . 'category' . DS . $category->getThumbnail() ?>" alt="<?php echo $this->htmlEscape($category->getName()) ?>" class="img-responsive" /> 
             </div>
             <div class="sub-name">
             	<span><?php echo $category->getName() ?></span></a>
+            	<span><input type="button" name="shop" value="SHOP >" class="shop"></span>
             </div>
         </li>
-    <?php endforeach; ?>
-</ul>	
+	    <?php endforeach; ?>
+	</ul>
 </div>

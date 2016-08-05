@@ -17,30 +17,6 @@ var i = 0;
 <?php
 $_coreHelper = $this->helper('core');
 ?>
-
-<style>
-    a.quickview-icon{display: none}
-    .col-main .category-products .products-grid li.item .details-area .product-name{
-        height: 40px;
-        text-align: left;
-        font-weight: 700;
-        color: #000000
-    }
-    .ratings{
-        display: none;
-    }
-    .price-box{text-align: left;}
-    .regular-price .price{color: red}
-    .category-products > .popular {
-        font-size: 35px;
-        font-weight: 700;
-        margin-bottom: 20px;
-        color: black;
-        text-align: center;
-    }
-</style>
-
-
 <?php if(!$_productCollection->count()): ?>
 <div class="category-products">
     <p class="note-msg"><?php echo $this->__('There are no products matching the selection.') ?></p>
@@ -184,9 +160,9 @@ $_coreHelper = $this->helper('core');
                         <div class="actions">
                             <?php if($_product->isSaleable()): ?>
                                 <?php  if ( !($_product->getTypeInstance(true)->hasOptions($_product)/*$_product->getData('has_options')*/ || $_product->isGrouped()) ) :  ?>
-                                    <a href="<?php if(Mage::getStoreConfig("ajaxcart/addtocart/enablecategory", $code)):?>javascript:setLocationAjax('<?php echo $this->getAddToCartUrl($_product) ?>')<?php else: ?><?php echo $this->getAddToCartUrl($_product) ?><?php endif; ?>" class="addtocart" title="<?php echo $this->__('Add to Cart') ?>"><i class="icon-cart"></i><span>&nbsp;<?php echo $this->__('Add to Cart') ?></span></a>
+                                    <a href="<?php if(Mage::getStoreConfig("ajaxcart/addtocart/enablecategory", $code)):?>javascript:setLocationAjax('<?php echo $this->getAddToCartUrl($_product) ?>')<?php else: ?><?php echo $this->getAddToCartUrl($_product) ?><?php endif; ?>" class="addtocart" title="<?php echo $this->__('Add to Basket') ?>"><img src="<?php echo $this->getSkinUrl('images/basket.png'); ?>"><img src="<?php echo $this->getSkinUrl('images/basket.png'); ?>"><span>&nbsp;<?php echo $this->__('Add to Basket') ?></span></a>
                                 <?php else : ?>
-                                    <a href="<?php if(Mage::getStoreConfig("ajaxcart/addtocart/enablecategory", $code)):?>javascript:showOptions('<?php echo $_product->getId()?>')<?php else: ?><?php echo $this->getAddToCartUrl($_product) ?><?php endif; ?>" class="addtocart" title="<?php echo $this->__('Add to Cart') ?>"><i class="icon-cart"></i><span>&nbsp;<?php echo $this->__('Add to Cart') ?></span></a>
+                                    <a href="<?php if(Mage::getStoreConfig("ajaxcart/addtocart/enablecategory", $code)):?>javascript:showOptions('<?php echo $_product->getId()?>')<?php else: ?><?php echo $this->getAddToCartUrl($_product) ?><?php endif; ?>" class="addtocart" title="<?php echo $this->__('Add to Basket') ?>"><img src="<?php echo $this->getSkinUrl('images/basket.png'); ?>"><span>&nbsp;<?php echo $this->__('Add to Basket') ?></span></a>
                                     <a href='<?php echo $this->getUrl('ajaxcart/index/options',array('product_id'=>$_product->getId()));?>' class='fancybox' id='fancybox<?php echo $_product->getId()?>' style='display:none'>Options</a>
                                 <?php endif;?>
                             <?php else: ?>
@@ -382,9 +358,9 @@ $_coreHelper = $this->helper('core');
                         <?php endif; ?>
                         <?php if($_product->isSaleable()): ?>
                             <?php  if ( !($_product->getTypeInstance(true)->hasOptions($_product)/*$_product->getData('has_options')*/ || $_product->isGrouped()) ) :  ?>
-                                <a href="<?php if(Mage::getStoreConfig("ajaxcart/addtocart/enablecategory", $code)):?>javascript:setLocationAjax('<?php echo $this->getAddToCartUrl($_product) ?>')<?php else: ?><?php echo $this->getAddToCartUrl($_product) ?><?php endif; ?>" class="addtocart" title="<?php echo $this->__('Add to Cart') ?>"><span>&nbsp;<?php echo $this->__('Add to Cart') ?></span><i class="icon-cart"></i></a>
+                                <a href="<?php if(Mage::getStoreConfig("ajaxcart/addtocart/enablecategory", $code)):?>javascript:setLocationAjax('<?php echo $this->getAddToCartUrl($_product) ?>')<?php else: ?><?php echo $this->getAddToCartUrl($_product) ?><?php endif; ?>" class="addtocart" title="<?php echo $this->__('Add to Basket') ?>"><span>&nbsp;<?php echo $this->__('Add to Basket') ?></span><img src="<?php echo $this->getSkinUrl('images/basket.png'); ?>"></a>
                             <?php else : ?>
-                                <a href="<?php if(Mage::getStoreConfig("ajaxcart/addtocart/enablecategory", $code)):?>javascript:showOptions('<?php echo $_product->getId()?>')<?php else: ?><?php echo $this->getAddToCartUrl($_product) ?><?php endif; ?>" class="addtocart" title="<?php echo $this->__('Add to Cart') ?>"><i class="icon-cart"></i><span>&nbsp;<?php echo $this->__('Add to Cart') ?></span></a>
+                                <a href="<?php if(Mage::getStoreConfig("ajaxcart/addtocart/enablecategory", $code)):?>javascript:showOptions('<?php echo $_product->getId()?>')<?php else: ?><?php echo $this->getAddToCartUrl($_product) ?><?php endif; ?>" class="addtocart" title="<?php echo $this->__('Add to Basket') ?>"><img src="<?php echo $this->getSkinUrl('images/basket.png'); ?>"><span>&nbsp;<?php echo $this->__('Add to Basket') ?></span></a>
                                 <a href='<?php echo $this->getUrl('ajaxcart/index/options',array('product_id'=>$_product->getId()));?>' class='fancybox' id='fancybox<?php echo $_product->getId()?>' style='display:none'>Options</a>
                             <?php endif;?>
                         <?php else: ?>

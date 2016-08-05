@@ -4,15 +4,15 @@
 }
 .category-name{
     position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
     font-size: 45px;
     font-weight: 800;
-    position: absolute;
-    top: 50%;
-    left: 50%;
     color: white;
 }
-.shop-all {
-    height: 35px;
+.shop-all, .shop {
+    height: 30px;
     background-color: #dd3626;
     border: none;
     width: 100px;
@@ -20,17 +20,28 @@
     color: white;
     font-weight: 700;
 }
+.shop-all:hover, .shop:hover{background-color: #b4291c}
+.category-image{
+    margin: 0
+    position: relative;
+}
 .shop-text{
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 30px;
     font-weight: 700;
 }
 .shop-our{
     background-color: white;
+    position: absolute;
+    transform: translate(-50%, 0);
+    left: 50%;
+    bottom: 0;
+    color: black !important;
 }
+.subcategories{margin-top: -33px}
 .subcategories > li{
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .sub-name >a{
     position: absolute;
@@ -39,4 +50,48 @@
     font-size: 25px;
     font-weight: 700;
     color: white;
+}
+.sub-name > span > input{
+    position: absolute;
+    top: 35%;
+    right: 20px;
+}
+.wrap{
+        background-image: url('../images/bg-beef.png');
+    }
+@media (min-width: 320px) and (max-width: 424px){
+    .shop-our{
+        position: relative;
+    }
+    .shop-text{
+        font-size: 23px;
+
+    }
+    .category-image img{height: 100px}
+    .category-name{
+        font-size: 30px;
+        top: 25px;
+    }
+    .sub-name > a{
+        left: 10px;
+        font-size: 18px;
+    }
+    .sub-name > span > input{
+        right: 0;
+    }
+    .subcategories{margin-top: -80px;}
+    .sub-img img{
+        width: 100%;
+        height: 80px;
+    }
+    .sub-name > span > input{
+        top: 30%;
+        right: 10px;
+    }
+    .a-left{top: 270px;}
+}
+@media (min-width: 768px){
+    .shop-our{top: 100px;}
+    .shop{height: 30px}
+    .sub-name > span > input{top: 35%}
 }
