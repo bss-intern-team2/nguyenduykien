@@ -206,10 +206,16 @@ $_specialPriceStoreLabel = $this->getProductAttribute('special_price')->getStore
             <?php else: ?>
                 <span class="regular-price" id="product-price-<?php echo $_id ?><?php echo $this->getIdSuffix() ?>">
                     <?php if ($_finalPrice == $_price): ?>
-                        <?php echo $_coreHelper->formatPrice($_price, true) ?>
+                        <?php $parts = explode('.', $_price);
+                        echo "<sup>$</sup>$parts[0]<sup>$parts[1]</sup>";  ?>
                     <?php else: ?>
                         <?php echo $_coreHelper->formatPrice($_finalPrice, true) ?>
                     <?php endif; ?>
+                </span>
+<!--                perkilo-->
+                <span class="price-per-kilo">
+                    <?php echo $_coreHelper->formatPrice($_price, true) ?>
+                    <?php echo $this->__("/kilo")?>
                 </span>
             <?php endif; ?>
         <?php endif; ?>

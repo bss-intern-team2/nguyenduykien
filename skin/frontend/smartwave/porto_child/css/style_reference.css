@@ -19,16 +19,18 @@
     text-align: center;
     color: white;
     font-weight: 700;
+    margin-bottom: 20px;
 }
 .shop-all:hover, .shop:hover{background-color: #b4291c}
 .category-image{
-    margin: 0
+    margin: 0;
     position: relative;
 }
 .shop-text{
-    font-size: 30px;
-    margin-top: 30px;
+    font-size: 25px;
+    margin-top: 20px;
     font-weight: 700;
+    margin-bottom: 0;
 }
 .shop-our{
     background-color: white;
@@ -38,7 +40,6 @@
     bottom: 0;
     color: black !important;
 }
-.subcategories{margin-top: -33px}
 .subcategories > li{
     position: relative;
     margin-bottom: 20px;
@@ -59,9 +60,16 @@
 .wrap{
         background-image: url('../images/bg-beef.png');
     }
+.regular-price{
+    color: red;
+    font-weight: 600;
+    font-size: 24px;
+}
 @media (min-width: 320px) and (max-width: 424px){
     .shop-our{
         position: relative;
+        transform: translate(0,0);
+        left: 0
     }
     .shop-text{
         font-size: 23px;
@@ -90,8 +98,36 @@
     }
     .a-left{top: 270px;}
 }
-@media (min-width: 768px){
-    .shop-our{top: 100px;}
+@media (min-width: 425px) and (max-width: 767px){
+    .shop-our{
+        position: relative;
+        left: 0;
+        transform: translate(0,0);
+        margin-bottom: 30px;
+    }
+    .category-name{
+        top: 15px;
+        font-size: 30px;
+    }
+    .sub-name > span > input{
+        top: 20%;
+        height: 20px;
+        width: 80px;
+        font-weight: 600;
+
+    }
+    .sub-name >a{
+        font-size: 20px;
+        top: 20%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1440px){
+    .shop-our{
+        position: relative;
+        left: 0;
+        transform: translate(0,0);
+        margin-bottom: 30px;
+    }
     .shop{height: 30px}
     .sub-name > span > input{top: 35%}
 }

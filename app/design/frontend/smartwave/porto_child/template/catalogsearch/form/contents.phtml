@@ -2,9 +2,13 @@
     $store = Mage::app()->getStore();
     $code  = $store->getCode();
 ?>
-<style type="text/css">
-    #search{display: none}
-</style>
+<script>
+    jQuery(document).ready(function () {
+        jQuery('.icon-search').on('click', function () {
+            jQuery('.search').css('display', 'block');
+        })
+    })
+</script>
 <form id="search_mini_form" action="<?php echo str_replace("https://","//",str_replace("http://","//",$this->helper('catalogsearch')->getResultUrl())) ?>" method="get">
     <div class="form-search <?php if(!Mage::getStoreConfig("catalogcategorysearch/general/enabled", $code)): ?>no-padding<?php endif; ?>">
         <label for="search"><?php echo $this->__('Search:') ?></label>

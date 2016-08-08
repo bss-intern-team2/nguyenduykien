@@ -1,4 +1,5 @@
 <div class="mini-cart">
+
     <?php
         $store = Mage::app()->getStore();
         $code  = $store->getCode();
@@ -10,7 +11,7 @@
         $_subtotal = $this->helper('checkout')->formatPrice(Mage::getSingleton('checkout/cart')->getQuote()->getGrandTotal())
     ?>
     <?php $_items = $this->getRecentItems() ?>
-    <a href="javascript:void(0)" class="mybag-link"><i class="icon-mini-cart"></i><span class="cart-info"><span class="cart-qty"><?php echo $_cartQty ?></span><span><?php echo $this->__('Items') ?></span></span></a>
+    <a href="javascript:void(0)" class="mybag-link"><img src="<?php echo $this->getSkinUrl('images/basket_icon.png')?>" class="icon-mini-cart" alt=""><span class="cart-info"><span class="cart-qty"><?php echo $_cartQty ?></span><span><?php echo $this->__('Items') ?></span></span></a>
         <div class="topCartContent block-content theme-border-color">
             <div class="inner-wrapper"><?php /*extra div to smooth slideUp and slideDown*/ ?>
                 <?php $_items = $this->getRecentItems() ?>
