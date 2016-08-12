@@ -1,0 +1,23 @@
+<!-- <layout>
+    <sales_order_grid_update_handle>
+        <reference name="sales_order.grid">
+            <action method="addColumnAfter">
+                <columnId>delivery_order</columnId>
+                <arguments>
+                    <header>Delivery Order</header>
+                    <index>shipping_arrival_date</index>
+                    <type>datetime</type>
+                </arguments>
+                <after>created_at</after>
+            </action>
+        </reference>
+    </sales_order_grid_update_handle>
+    <adminhtml_sales_order_grid>
+      
+        <update handle="sales_order_grid_update_handle" />
+    </adminhtml_sales_order_grid>
+    <adminhtml_sales_order_index>
+     
+        <update handle="sales_order_grid_update_handle" />
+    </adminhtml_sales_order_index>
+</layout> -->
