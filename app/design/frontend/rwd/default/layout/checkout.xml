@@ -33,7 +33,6 @@ Default layout, loads most of the pages
 -->
 
     <default>
-
         <!-- Mage_Checkout -->
         <reference name="top.links">
             <block type="checkout/links" name="checkout_cart_link">
@@ -73,6 +72,15 @@ Default layout, loads most of the pages
     </default>
 
     <checkout_cart_index translate="label">
+
+        <!-- add static block -->
+        <reference name="root">
+          <block type="cms/block" name="sku_checkout" before="coupon">
+              <action method="setBlockId"><block_id>sku_checkout</block_id></action>
+            </block>
+        </reference>
+
+
         <label>Shopping Cart</label>
         <remove name="right"/>
         <remove name="left"/>

@@ -26,3 +26,21 @@
 
 	</div>
 </div>
+
+<div>
+<?php
+$order = Mage::getModel('sales/order')->load($orderId);
+$_grand = $order->getGrandTotal();
+$custname = $order->getCustomerName();
+var_dump($custname);
+
+foreach ($items as $itemId => $item)
+{
+    $sObject2->Item_name__c = $item->getName();
+    $sObject2->Unit_price__c = $item->getPrice();
+    $sObject2->Sku__c = $item->getSku();
+    $sObject2->Quantity__c = $item->getQtyToInvoice();
+}
+?>
+</div>
+    

@@ -1,0 +1,72 @@
+<?php
+ /**
+ * BssCommerce Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://bsscommerce.com/Bss-Commerce-License.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * BssCommerce does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * BssCommerce does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   BSS
+ * @package    BSS_Deliverydate
+ * @author     Extensions Team
+ * @copyright  Copyright (c) 2014-2105 BssCommerce Co. (http://bsscommerce.com)
+ * @license    http://bsscommerce.com/Bss-Commerce-License.txt
+ */
+?>
+<?php
+    /**
+    * @see Mage_Checkout_Block_Agreements
+    */
+?>
+<style type="text/css">
+    .arrival-info ul{ border:none !important; padding:0 !important; margin:0 !important;}
+    .arrival-info li{ margin-bottom:10px; text-align:left; }
+    .arrival-info label{ font-weight:bold; color:#666666;}
+</style>
+<form action="" id="checkout-agreements" onsubmit="return false;">  
+    <div class="buttons-set arrival-info">
+        <?php 
+            if(Mage::getStoreConfig('deliverydate/deliverydate_general/enabled')){
+                if (Mage::getStoreConfig('deliverydate/deliverydate_general/on_which_page')==2){
+                    echo $this->getLayout()->createBlock('core/html_calendar')->setTemplate('deliverydate/js/calendar.phtml')->toHtml() ;
+                    echo $this->getLayout()->createBlock('deliverydate/deliverydate')->setTemplate('deliverydate/deliverydate.phtml')->toHtml(); 
+                }
+            }
+        ?>
+    </div>
+
+    <?php if (!$this->getAgreements()) return; ?>
+
+    <ol class="checkout-agreements">
+        <?php foreach ($this->getAgreements() as $_a): ?>
+            <li>
+                <div class="agreement-content"<?php echo ($_a->getContentHeight() ? ' style="height:' . $_a->getContentHeight() . '"' : '')?>>
+                    <?php if ($_a->getIsHtml()):?>
+                        <?php echo $_a->getContent() ?>
+                        <?php else:?>
+                        <?php echo nl2br($this->htmlEscape($_a->getContent())) ?>
+                        <?php endif; ?>
+                </div>
+                <p class="agree">
+                    <input type="checkbox" id="agreement-<?php echo $_a->getId()?>" name="agreement[<?php echo $_a->getId()?>]" value="1" title="<?php echo $this->htmlEscape($_a->getCheckboxText()) ?>" class="checkbox" /><label for="agreement-<?php echo $_a->getId()?>"><?php echo $_a->getIsHtml() ? $_a->getCheckboxText() : $this->htmlEscape($_a->getCheckboxText()) ?></label>
+                </p>
+            </li>
+            <?php endforeach ?>
+    </ol>
+</form>
+<script type="text/javascript">
+
+</script>

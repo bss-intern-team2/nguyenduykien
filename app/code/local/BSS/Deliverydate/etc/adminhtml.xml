@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<config>
+    <!--<menu>
+         <bss translate="title" module="deliverydate">
+            <title>BSS</title>
+            <sort_order>100</sort_order>
+            <children>
+                <page translate="title" module="deliverydate">
+                    <title>Pages</title>
+                    <action>adminhtml/cms_page</action>
+                    <sort_order>0</sort_order>
+                </page>
+                <block translate="title" module="cms">
+                    <title>Static Blocks</title>
+                    <action>adminhtml/cms_block</action>
+                    <sort_order>10</sort_order>
+                </block>
+            </children>
+         </bss>
+    </menu>-->
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <bss translate="title" module="deliverydate">
+                        <title>BSS</title>
+                        <sort_order>100</sort_order>
+                        <!--<children>
+                            <block translate="title">
+                                <title>Static Blocks</title>
+                                <sort_order>10</sort_order>
+                            </block>
+                            <page translate="title">
+                                <title>Pages</title>
+                                <sort_order>0</sort_order>
+                                <children>
+                                    <save translate="title">
+                                        <title>Save Page</title>
+                                        <sort_order>0</sort_order>
+                                    </save>
+                                    <delete translate="title">
+                                        <title>Delete Page</title>
+                                        <sort_order>10</sort_order>
+                                    </delete>
+                                </children>
+                            </page>
+                            <media_gallery translate="title">
+                                <title>Media Gallery</title>
+                                <sort_order>20</sort_order>
+                            </media_gallery>
+                        </children>-->
+                    </bss>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <bss translate="title" module="deliverydate">
+                                        <title>Content Management</title>
+                                    </bss>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

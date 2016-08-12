@@ -33,7 +33,6 @@
     <default translate="label" module="page">
         <label>All Pages</label>
         <block type="page/html" name="root" output="toHtml" template="page/3columns.phtml">
-
             <block type="page/html_head" name="head" as="head">
                 <action method="addJs"><script>prototype/prototype.js</script></action>
                 <action method="addJs"><script>lib/jquery/jquery-1.10.2.min.js</script></action>
@@ -49,6 +48,9 @@
                 <action method="addJs"><script>varien/form.js</script></action>
                 <action method="addJs"><script>mage/translate.js</script></action>
                 <action method="addJs"><script>mage/cookies.js</script></action>
+
+                <action method="addJs"><script>kien/bai1.js</script></action>
+           
 
                 <block type="page/js_cookie" name="js_cookies" template="page/js/cookie.phtml"/>
 

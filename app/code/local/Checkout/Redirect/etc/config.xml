@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Checkout_Redirect>
+            <version>1.0.0</version>
+        </Checkout_Redirect>
+    </modules>
+    
+   
+
+    <global>    
+        <events>
+            <controller_action_predispatch_checkout_onepage_index>
+                <observers>
+                    <checkout_redirect>
+                        <type>singleton</type>
+                        <class>Checkout_Redirect_Model_Observer</class>
+                        <method>checkoutRedirect</method>
+                    </checkout_redirect>
+                </observers>
+            </controller_action_predispatch_checkout_onepage_index>
+        </events>
+    </global>
+
+</config>

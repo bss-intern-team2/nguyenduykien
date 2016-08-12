@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <bss_extensions translate="label" module="deliverydate">
+            <label>BSS Group Extensions</label>
+            <sort_order>400</sort_order>
+        </bss_extensions>
+    </tabs>
+    <sections>
+        <deliverydate translate="label" module="deliverydate">
+            <class>separator-top</class>
+            <label>Delivery Date</label>
+            <tab>bss_extensions</tab>
+            <sort_order>130</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <deliverydate_general translate="label">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Select Yes to enable this feature.</comment>
+                        </enabled>
+                        <on_which_page translate="label">
+                            <label>Display At</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>BSS_Deliverydate_Model_Config_Option</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Choose at which step delivery date should be captured.</comment>
+                        </on_which_page>
+                        <!--deliverydate_html translate="label">
+                            <label>Design HTML</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment></comment>
+                        </deliverydate_html-->
+                        <!--deliverydate_format>
+                            <label>Date Format</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>BSS_Deliverydate_Model_Config_Dateformat</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Choose date format in which date will be displayed in frontend and admin panel.</comment>
+                        </deliverydate_format-->
+                        <!--deliverytime_format>
+                            <label>Time Format</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>BSS_Deliverydate_Model_Config_Timeformat</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Choose time format in which time will be displayed in frontend and admin panel.</comment>
+                        </deliverytime_format-->
+						<process_time>
+							<label>Processìng time</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment><![CDATA[Delivery will be taken after(x) day(s) upon the date order(s) made]]></comment>
+						</process_time>
+						<cut_off_time>
+							<label>Cut off time</label>
+                            <frontend_type>text</frontend_type>
+							<frontend_model>deliverydate/adminhtml_form_field_cutofftime</frontend_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment><![CDATA[If customers place order after this time the date when orders made will be counted as the following day]]></comment>
+						</cut_off_time>
+						<block_out_holidays>
+							<label>Holidays/Exclude Days/Blackout Days</label>
+                            <frontend_model>deliverydate/adminhtml_form_field_regex</frontend_model>
+                            <backend_model>adminhtml/system_config_backend_serialized_array</backend_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[You can add holidays or exclude days or blackout certain dates from your deliver calendar]]></comment>
+						</block_out_holidays>
+						
+						<time_slots>
+							<label>Time slots</label>
+                            <frontend_model>deliverydate/adminhtml_form_field_regexts</frontend_model>
+                            <backend_model>adminhtml/system_config_backend_serialized_array</backend_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[You can add time slots and customer only select one of selections]]></comment>
+						</time_slots>
+                        <deliverydate_day_off>
+                            <label>Disable delivery date</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>BSS_Deliverydate_Model_Config_Dayoff</source_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Choose days on which shipping will not be available.</comment>
+                        </deliverydate_day_off>
+                    </fields>
+                </deliverydate_general>
+            </groups>
+        </deliverydate>
+    </sections>
+</config>

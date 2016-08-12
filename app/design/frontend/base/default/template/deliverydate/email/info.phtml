@@ -1,0 +1,49 @@
+<?php
+ /**
+ * BssCommerce Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://bsscommerce.com/Bss-Commerce-License.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * BssCommerce does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * BssCommerce does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   BSS
+ * @package    BSS_Deliverydate
+ * @author     Extensions Team
+ * @copyright  Copyright (c) 2014-2105 BssCommerce Co. (http://bsscommerce.com)
+ * @license    http://bsscommerce.com/Bss-Commerce-License.txt
+ */
+?>
+<?php $_order = $this->getOrder() ?>
+<?php  
+	$date_format = Mage::getStoreConfig('deliverydate/deliverydate_general/deliverydate_format');
+	$time_format = Mage::getStoreConfig('deliverydate/deliverydate_general/deliverytime_format');
+	if ($date_format=='')
+	 $date_format='d/M/Y';
+	//if($time_format=='')
+	//    $date_format.=" ,g:i a";
+	//else
+	//$date_format.=" ".$time_format;
+	if ($_order->getShippingArrivalDate()!=''&&$_order->getShippingArrivalTimeslot()!='')
+	 echo "<strong>Shipping Arrival Date: </strong>".$currentDate = date ($date_format,strtotime($_order->getShippingArrivalDate()))." in ".$_order->etShippingArrivalTimeslot();
+	else if ($_order->getShippingArrivalDate()!=''&&$_order->getShippingArrivalTimeslot()=='')
+	   echo "<strong>Shipping Arrival Date: </strong>".$currentDate = date ($date_format,strtotime($_order->getShippingArrivalDate()));
+	else if ($_order->getShippingArrivalDate()==''&&$_order->getShippingArrivalTimeslot()!='')
+	   echo "<strong>Shipping Arrival Timeslot: </strong>".$_order->getShippingArrivalTimeslot();
+	else
+	   echo "<strong>Shipping Arrival Date: </strong> N/A".$_order->getShippingArrivalDate();
+	if ($_order->getShippingArrivalComments()!='')
+	 echo "<br/><strong>Shipping Arrival Comment: </strong>".$_order->getShippingArrivalComments();					
+?>

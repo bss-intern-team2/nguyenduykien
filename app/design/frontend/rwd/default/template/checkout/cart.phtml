@@ -31,6 +31,17 @@
  * @var $this Mage_Checkout_Block_Cart
  */
 ?>
+<!-- show static block if couponCode = ABCXYZ -->
+<?php 
+    $couponCode = Mage::getSingleton('checkout/session')
+             ->getQuote()
+             ->getCouponCode();
+   if($couponCode=="ABCXYZ")
+   {
+        echo $this->getLayout()->createBlock('cms/block')->setBlockId('coupon_test')->toHtml();  
+   }
+?>
+
 <?php $_priceDisplay = ($this->helper('tax')->displayCartBothPrices()) ? 'display-both-prices' : 'display-single-price'; ?>
 <div class="cart <?php echo $_priceDisplay; ?>">
     <div class="page-title title-buttons">
@@ -155,6 +166,18 @@
     <div class="cart-forms">
         <?php /* Extensions placeholder */ ?>
         <?php echo $this->getChildHtml('checkout_cart_widget') ?>
+
+        <!-- code static block -->
+        <?php
+            $cart = Mage::getModel('checkout/cart')->getQuote()->getAllItems();
+            foreach ($cart as $item) {
+                $sku = $item->getProduct()->getSku(); 
+            }
+            if(substr($sku, 0, 4) == 'abc-'){
+                    echo $this->getLayout()->createBlock('cms/block')->setBlockId('sku_checkout')->toHtml(); 
+                }
+         ?>
+         
         <?php echo $this->getChildHtml('coupon') ?>
         <?php echo $this->getChildHtml('checkout.cart.extra') ?>
         <?php if (!$this->getIsVirtual()): echo $this->getChildHtml('shipping'); endif; ?>
